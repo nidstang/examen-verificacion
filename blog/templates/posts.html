@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	{% for post in posts %}
+		<h3>{{ post.title }}</h3>
+		<p>{{ post.content }}</p>
+		<p>Likes: <span id="likes">{{ post.clikcs }}</span></p>
+		<a href="">Mostrar con texto en mayusculas</a>
+		|
+		<a href="">Mostrar recortado</a>
+		|
+		<a href="">Mandar Like</a>
+		<hr />
+
+	{% endfor %}
+{% endblock %}

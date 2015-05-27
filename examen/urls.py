@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 
-from blog.views import quick_test
+from blog.views import home, create_post, get_posts
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -17,5 +17,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^home/$', quick_test),
+    url(r'^home/$', home, name="home"),
+    url(r'^create/$', create_post, name="create"),
+    url(r'^posts/$', get_posts, name="posts"),
 )
