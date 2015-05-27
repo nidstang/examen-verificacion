@@ -10,8 +10,8 @@ from django.test import TestCase, RequestFactory
 import unittest
 import mock
 
-from .models import Post, PostManager
-from .views import home, create_post
+from blog.models import Post, PostManager
+from blog.views import home, create_post
 from util import Util
 
 

@@ -1,6 +1,6 @@
 # Create your views here.
 from django.shortcuts import render_to_response, render
-from .models import Post, PostForm
+from blog.models import Post, PostForm
 from django.template import Context
 from django.template import RequestContext
 from blog.util import Util
