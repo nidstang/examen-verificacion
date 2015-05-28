@@ -34,7 +34,7 @@ def get_posts(request):
 
 	return render(request, "posts.html", {"posts": posts})
 
-#def view_post_upper(request, id):
-#	post = Post.objects.get(id=id)
+def view_post_upper(request, id):
+	post = Post.objects.get(id=id)
 
-#	return render(request, "post_view.html", {"post": post})
+	return render(request, "post_view.html", {"post": post})
